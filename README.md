@@ -4,13 +4,27 @@
 
 # 准备
 
-申请身份ONTID，包括ONTID、密码、slat；
+配置文件为`application.properties`
 
-申请钱包地址，并充值，测试网的充值地址是：https://developer.ont.io/applyOng
+1、认证方（例如商汤）的ONTID，包括ONTID、密码、slat；
+```properties
+sensetime.identity.ontId=
+sensetime.identity.password=
+sensetime.identity.salt=
+```
 
-# 配置
+2、申请付款账户地址，并充值，测试网的充值地址是：https://developer.ont.io/applyOng
+```properties
+account.address=
+account.wif=
+```
 
-配置文件为`application.properties`，包括区块链地址等信息；
+3、配置区块链地址、合约地址等信息；
+```properties
+ontology.restfulUrl=http://polaris1.ont.io:20334
+claimRecord.codeHash=36bb5c053b6b839c8f6b923fe852f91239b9fccc
+```
+
 
 # 构造参数
 
